@@ -63,12 +63,14 @@ const PricingSection = () => {
                   <span className="font-bold text-base">🎁 OFERTA ESPECIAL: 80% DE DESCONTO</span>
                   <span className="text-sm">Menos que um lanche no shopping!</span>
                 </div>
-                <Button 
-                  size="lg" 
-                  className="w-full bg-gradient-to-r from-red-500 to-orange-400 hover:from-red-600 hover:to-orange-500 text-white py-6 text-xl font-bold rounded-full mb-6 transform hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-glow"
+                <a
+                  href="https://pay.hotmart.com/B95382363M"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-gradient-to-r from-red-500 to-orange-400 hover:from-red-600 hover:to-orange-500 text-white py-6 text-xl font-bold rounded-full mb-6 transform hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-glow text-center"
                 >
                   <span role="img" aria-label="cartao">💳</span> COMPRAR AGORA - ACESSO IMEDIATO
-                </Button>
+                </a>
                 <div className="flex flex-col items-center mt-4 space-y-1">
                   <div className="flex items-center space-x-2 text-gray-700 text-sm">
                     <span role="img" aria-label="cadeado">🔒</span> <span>Pagamento 100% Seguro</span>

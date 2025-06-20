@@ -88,12 +88,14 @@ const HeroSection = () => {
 
           {/* CTA Principal */}
           <div className="space-y-6">
-            <Button 
-              size="lg" 
-              className="bg-green-500 hover:bg-green-600 text-white px-12 py-6 text-2xl font-bold rounded-full transform hover:scale-105 transition-all duration-300 shadow-2xl animate-pulse-glow hover:shadow-green-500/50"
+            <a
+              href="https://pay.hotmart.com/B95382363M"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-green-500 hover:bg-green-600 text-white px-12 py-6 text-2xl font-bold rounded-full transform hover:scale-105 transition-all duration-300 shadow-2xl animate-pulse-glow hover:shadow-green-500/50"
             >
               🚀 QUERO ACESSAR O MÉTODO AGORA!
-            </Button>
+            </a>
             
             <div className="flex items-center justify-center space-x-4 text-white">
               <CheckCircle className="w-5 h-5 text-green-400" />

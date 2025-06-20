@@ -13,13 +13,16 @@ const FinalCTASection = () => {
             Não deixe mais um dia passar estudando do jeito errado.<br/>
             <span className="font-bold text-white">Sua aprovação está a apenas um clique de distância!</span>
           </p>
-          <button
+          <a
+            href="https://pay.hotmart.com/B95382363M"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 mb-8 px-10 py-6 rounded-full bg-gradient-to-r from-red-500 to-orange-500 text-white text-2xl font-extrabold shadow-2xl hover:scale-105 transition-all duration-200 flex items-center justify-center gap-3 mx-auto"
           >
             <span role="img" aria-label="alvo">🎯</span> GARANTIR MINHA VAGA AGORA!
-          </button>
+          </a>
           <div className="flex items-center justify-center gap-2 text-yellow-300 text-base font-medium mb-8">
-            <span role="img" aria-label="alerta">⚠️</span> Restam apenas <span className="text-red-400 font-bold">-146</span> para hoje
+            <span role="img" aria-label="alerta">⚠️</span> Restam apenas <span className="text-red-400 font-bold">5</span> para hoje
           </div>
         </div>
       </div>
