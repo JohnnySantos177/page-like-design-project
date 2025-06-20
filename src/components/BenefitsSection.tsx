@@ -6,33 +6,33 @@ const BenefitsSection = () => {
   const mainBenefits = [
     {
       icon: Brain,
-      title: "SISTEMA DE ESTUDOS INTELIGENTE",
-      subtitle: "A metodologia completa para aprovação",
-      description: "Framework completo com cronogramas, técnicas de memorização e estratégias de revisão que garantem sua aprovação."
+      title: "SISTEMA DE ESTUDOS ORGANIZADO",
+      subtitle: "Metodologia estruturada para aprovação",
+      description: "Framework completo com cronogramas, técnicas de memorização e estratégias de revisão desenvolvidas por quem foi aprovado."
     },
     {
       icon: Target,
-      title: "FOCO APENAS NO QUE CAI",
-      subtitle: "Não perca tempo com conteúdo desnecessário",
-      description: "Análise estatística de todas as bancas para você estudar apenas o que realmente é cobrado nas provas."
+      title: "FOCO NO QUE REALMENTE IMPORTA",
+      subtitle: "Direcionamento baseado em experiência",
+      description: "Aprenda a identificar o que é mais importante estudar com base na experiência de quem já passou."
     },
     {
       icon: Zap,
-      title: "TÉCNICAS DE APRENDIZAGEM ACELERADA",
-      subtitle: "Aprenda até 3x mais rápido",
-      description: "Métodos científicos de memorização e fixação que aceleram drasticamente seu aprendizado."
+      title: "TÉCNICAS PRÁTICAS DE ESTUDO",
+      subtitle: "Métodos testados na prática",
+      description: "Estratégias de memorização e fixação que realmente funcionam, testadas em concursos reais."
     }
   ];
 
   const bonusItems = [
-    "🎯 Cronograma de estudos personalizado",
-    "📚 Técnicas de leitura dinâmica",
-    "🧠 Mapas mentais estratégicos", 
-    "📝 Sistema de revisões programadas",
+    "🎯 Cronograma de estudos estruturado",
+    "📚 Técnicas de leitura eficiente",
+    "🧠 Mapas mentais para memorização", 
+    "📝 Sistema de revisões estratégicas",
     "⚡ Método de resolução de questões",
-    "📊 Planilhas de controle de desempenho",
-    "🎥 Vídeos explicativos exclusivos",
-    "💬 Grupo VIP no Telegram"
+    "📊 Planilhas de acompanhamento",
+    "🎥 Conteúdo explicativo detalhado",
+    "💬 Suporte e orientações"
   ];
 
   return (
@@ -48,8 +48,8 @@ const BenefitsSection = () => {
               O Sistema Completo Para Sua Aprovação
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Tudo que você precisa para estudar de forma eficiente e conquistar 
-              sua aprovação no menor tempo possível
+              Tudo que você precisa para estudar de forma eficiente e aumentar 
+              suas chances de conquistar sua aprovação
             </p>
           </div>
 
@@ -79,7 +79,7 @@ const BenefitsSection = () => {
           {/* O que você vai receber */}
           <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-10 border border-green-200">
             <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">
-              🎁 O QUE VOCÊ VAI RECEBER HOJE:
+              🎁 O QUE VOCÊ VAI RECEBER:
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -100,7 +100,7 @@ const BenefitsSection = () => {
                 HOJE POR APENAS: <span className="text-red-600">R$ 97,00</span>
               </p>
               <p className="text-black text-sm mt-2">
-                ⏰ Oferta válida apenas hoje • Acesso imediato
+                ⏰ Oferta por tempo limitado • Acesso imediato
               </p>
             </div>
           </div>

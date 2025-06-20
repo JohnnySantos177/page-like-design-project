@@ -27,21 +27,21 @@ const HeroSection = () => {
           
           {/* Badge superior */}
           <div className="inline-flex items-center bg-yellow-400 text-black px-6 py-2 rounded-full font-bold text-sm mb-8 animate-pulse">
-            🔥 MÉTODO REVOLUCIONÁRIO • APROVAÇÃO GARANTIDA
+            🔥 MÉTODO COMPROVADO • RESULTADOS REAIS
           </div>
 
           <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in">
             <span className="text-yellow-400">ROTINA INTELIGENTE</span>
             <br />
-            O Método que Vai Te Fazer
+            O Método que Vai Te Ajudar a
             <br />
-            <span className="text-green-400 animate-pulse">PASSAR EM QUALQUER CONCURSO</span>
+            <span className="text-green-400 animate-pulse">PASSAR EM CONCURSOS PÚBLICOS</span>
           </h1>
 
           <h2 className="text-xl md:text-2xl text-blue-200 mb-8 font-medium animate-fade-in delay-200">
-            Descubra o sistema completo que aprovou mais de 5.000 concurseiros 
+            Descubra o sistema completo desenvolvido por Johnny Santos
             <br />
-            em menos de 12 meses, mesmo estudando apenas 2 horas por dia
+            para otimizar seus estudos e aumentar suas chances de aprovação
           </h2>
 
           {/* Video placeholder */}
@@ -71,18 +71,18 @@ const HeroSection = () => {
             {[
               {
                 icon: "🎯",
-                title: "FOCO LASER",
-                desc: "Estude apenas o que realmente cai na prova"
+                title: "FOCO DIRECIONADO",
+                desc: "Estude o que realmente importa para sua aprovação"
               },
               {
                 icon: "⚡",
-                title: "RESULTADOS RÁPIDOS", 
-                desc: "Veja evolução em apenas 30 dias"
+                title: "ORGANIZAÇÃO EFICIENTE", 
+                desc: "Sistema testado de estudos organizados"
               },
               {
                 icon: "🏆",
-                title: "APROVAÇÃO GARANTIDA",
-                desc: "Método testado por +5.000 aprovados"
+                title: "ESTRATÉGIA COMPROVADA",
+                desc: "Método usado por concurseiros aprovados"
               }
             ].map((item, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 transform hover:scale-105 transition-all duration-300">
@@ -110,19 +110,19 @@ const HeroSection = () => {
 
           {/* Prova social */}
           <div className="mt-12 animate-fade-in delay-1000">
-            <p className="text-blue-200 mb-4">Já transformamos a vida de:</p>
+            <p className="text-blue-200 mb-4">Criado por especialista aprovado:</p>
             <div className="flex justify-center items-center space-x-8 text-white">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400">5.247+</div>
-                <div className="text-sm">Aprovados</div>
+                <div className="text-3xl font-bold text-yellow-400">TRT-19</div>
+                <div className="text-sm">Aprovado</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-400">89%</div>
-                <div className="text-sm">Taxa de Sucesso</div>
+                <div className="text-3xl font-bold text-green-400">Direito</div>
+                <div className="text-sm">Especialista</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400">2h/dia</div>
-                <div className="text-sm">Tempo Médio</div>
+                <div className="text-3xl font-bold text-blue-400">Prático</div>
+                <div className="text-sm">Método Testado</div>
               </div>
             </div>
           </div>

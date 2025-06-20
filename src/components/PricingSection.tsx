@@ -20,14 +20,14 @@ const PricingSection = () => {
         
         {/* Urgência */}
         <div className="bg-red-500 text-white py-3 px-6 rounded-full inline-block mb-8 animate-pulse">
-          <span className="font-bold">⚠️ ATENÇÃO: Oferta encerra em breve!</span>
+          <span className="font-bold">⚠️ ATENÇÃO: Oferta por tempo limitado!</span>
         </div>
 
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
-          🚀 Garante Sua Vaga Agora
+          🚀 Garanta Sua Vaga Agora
         </h2>
         <p className="text-xl text-gray-300 mb-12 animate-fade-in delay-200">
-          Invista no seu futuro e mude de vida hoje mesmo
+          Invista no seu futuro e melhore sua preparação para concursos
         </p>
 
         <div className="max-w-lg mx-auto">
@@ -45,7 +45,7 @@ const PricingSection = () => {
                 🔥 80% OFF
               </div>
               <h3 className="font-bold text-2xl">ROTINA INTELIGENTE</h3>
-              <p className="text-green-100">Sistema Completo de Aprovação</p>
+              <p className="text-green-100">Sistema Completo de Estudos</p>
             </div>
             
             <div className="p-8">
@@ -68,11 +68,11 @@ const PricingSection = () => {
               <div className="space-y-3 mb-8 text-left">
                 {[
                   "✅ Acesso imediato e vitalício",
-                  "✅ Cronograma personalizado", 
+                  "✅ Cronograma estruturado", 
                   "✅ Técnicas de memorização",
                   "✅ Sistema de revisões",
-                  "✅ Grupo VIP no Telegram",
-                  "✅ Suporte direto comigo",
+                  "✅ Materiais de apoio",
+                  "✅ Suporte disponível",
                   "✅ Garantia de 7 dias"
                 ].map((item, index) => (
                   <div key={index} className="flex items-center">
@@ -86,16 +86,16 @@ const PricingSection = () => {
                 size="lg" 
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 text-xl font-bold rounded-xl mb-6 transform hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-glow"
               >
-                🚀 GARANTIR MINHA APROVAÇÃO AGORA!
+                🚀 GARANTIR MINHA VAGA AGORA!
               </Button>
 
               {/* Urgência */}
               <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-4 mb-6">
                 <p className="text-yellow-800 font-bold text-sm">
-                  ⏰ ÚLTIMAS VAGAS DISPONÍVEIS
+                  ⏰ OFERTA POR TEMPO LIMITADO
                 </p>
                 <p className="text-yellow-700 text-xs">
-                  Esta oferta especial termina em breve
+                  Aproveite esta oportunidade especial
                 </p>
               </div>
 
@@ -122,11 +122,11 @@ const PricingSection = () => {
         <div className="mt-12 max-w-2xl mx-auto">
           <div className="bg-blue-900/50 backdrop-blur-lg rounded-xl p-6 border border-blue-500/30">
             <p className="text-white text-lg italic mb-4">
-              "Não espere mais! Cada dia que você adia é uma oportunidade perdida. 
-              Comece hoje e em 12 meses você estará aprovado!"
+              "O conhecimento é o melhor investimento que você pode fazer. 
+              Comece hoje sua preparação de forma organizada e eficiente!"
             </p>
             <p className="text-blue-300 font-semibold">
-              - Johnny Sábia, Aprovado TRT-19
+              - Johnny Santos, Aprovado TRT-19
             </p>
           </div>
         </div>
