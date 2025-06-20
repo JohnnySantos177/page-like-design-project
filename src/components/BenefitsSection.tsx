@@ -1,114 +1,117 @@
 
 import React from 'react';
-import { CheckCircle, Brain, Target, Clock, TrendingUp, Award, Users, BookOpen } from 'lucide-react';
+import { CheckCircle, Brain, Target, Clock, TrendingUp, Award, Users, BookOpen, Zap, Star } from 'lucide-react';
 
 const BenefitsSection = () => {
-  const benefits = [
+  const mainBenefits = [
     {
       icon: Brain,
-      title: "ROTINA INTELIGENTE",
-      subtitle: "A metodologia para a Aprovação",
-      description: "Sistema de estudos com resultados comprovados que garante sua aprovação."
+      title: "SISTEMA DE ESTUDOS INTELIGENTE",
+      subtitle: "A metodologia completa para aprovação",
+      description: "Framework completo com cronogramas, técnicas de memorização e estratégias de revisão que garantem sua aprovação."
     },
     {
       icon: Target,
-      title: "Técnicas de Micro Estudo Acelerado",
-      subtitle: "Mais de uma hora de ensino focado",
-      description: "Aprenda as técnicas que aceleram seu aprendizado em até 300%."
+      title: "FOCO APENAS NO QUE CAI",
+      subtitle: "Não perca tempo com conteúdo desnecessário",
+      description: "Análise estatística de todas as bancas para você estudar apenas o que realmente é cobrado nas provas."
     },
     {
-      icon: Clock,
-      title: "Cronograma de Estudos Inteligente",
-      subtitle: "Organize seu dia atual na TXT-19",
-      description: "Sistema completo de organização para máxima produtividade."
-    },
-    {
-      icon: TrendingUp,
-      title: "Técnica das Revisões Certas",
-      subtitle: "Use as questões, domine como resolver",
-      description: "Método revolucionário de revisão que fixa o conteúdo para sempre."
-    },
-    {
-      icon: Award,
-      title: "Método de Resolução",
-      subtitle: "Chegue na resposta certa nos provas",
-      description: "Estratégias exclusivas para acertar mais questões em menos tempo."
-    },
-    {
-      icon: Users,
-      title: "Estratégias Commented",
-      subtitle: "Analise os seus comentários que funcionam",
-      description: "Aprenda com os erros mais comuns e como evitá-los."
-    },
-    {
-      icon: BookOpen,
-      title: "Estratégias de Revisão",
-      subtitle: "Textos que ficarão na sua cabeça por anos",
-      description: "Sistema de fixação permanente do conhecimento."
+      icon: Zap,
+      title: "TÉCNICAS DE APRENDIZAGEM ACELERADA",
+      subtitle: "Aprenda até 3x mais rápido",
+      description: "Métodos científicos de memorização e fixação que aceleram drasticamente seu aprendizado."
     }
   ];
 
-  const bonusItem = {
-    icon: CheckCircle,
-    title: "BÔNUS EXCLUSIVO",
-    subtitle: "Acesso à Curação Cronológica",
-    description: "Uma linha do tempo com todo material organizado estrategicamente."
-  };
+  const bonusItems = [
+    "🎯 Cronograma de estudos personalizado",
+    "📚 Técnicas de leitura dinâmica",
+    "🧠 Mapas mentais estratégicos", 
+    "📝 Sistema de revisões programadas",
+    "⚡ Método de resolução de questões",
+    "📊 Planilhas de controle de desempenho",
+    "🎥 Vídeos explicativos exclusivos",
+    "💬 Grupo VIP no Telegram"
+  ];
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-20">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-start mb-12">
-            <div className="w-2 bg-red-500 h-32 mr-6 flex-shrink-0"></div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                📚 ROTINA INTELIGENTE - A metodologia para a Aprovação
-              </h2>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Um sistema completo de estudos que vai transformar sua preparação e garantir sua aprovação no concurso dos seus sonhos.
-              </p>
-            </div>
+        <div className="max-w-6xl mx-auto">
+          
+          {/* Título principal */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+              📚 <span className="text-blue-600">ROTINA INTELIGENTE</span>
+              <br />
+              O Sistema Completo Para Sua Aprovação
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Tudo que você precisa para estudar de forma eficiente e conquistar 
+              sua aprovação no menor tempo possível
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {benefits.map((benefit, index) => {
+          {/* Benefícios principais */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {mainBenefits.map((benefit, index) => {
               const IconComponent = benefit.icon;
               return (
-                <div key={index} className="flex items-start space-x-4 p-4">
-                  <div className="flex-shrink-0">
-                    <IconComponent className="w-6 h-6 text-green-500" />
+                <div key={index} className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                  <div className="bg-blue-500 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <div>
-                    <h3 className="font-bold text-gray-800 mb-1">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-2">
-                      {benefit.subtitle}
-                    </p>
-                    <p className="text-gray-700">
-                      {benefit.description}
-                    </p>
-                  </div>
+                  <h3 className="font-bold text-gray-800 mb-3 text-xl">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-blue-600 mb-3 font-medium">
+                    {benefit.subtitle}
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </div>
               );
             })}
           </div>
 
-          <div className="bg-red-50 border border-red-200 rounded-lg p-6 mt-8">
-            <div className="flex items-start space-x-4">
-              <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-bold text-red-700 mb-1">
-                  {bonusItem.title}
-                </h3>
-                <p className="text-sm text-red-600 mb-2">
-                  {bonusItem.subtitle}
-                </p>
-                <p className="text-red-700">
-                  {bonusItem.description}
-                </p>
-              </div>
+          {/* O que você vai receber */}
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-10 border border-green-200">
+            <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">
+              🎁 O QUE VOCÊ VAI RECEBER HOJE:
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              {bonusItems.map((item, index) => (
+                <div key={index} className="flex items-center space-x-3 bg-white rounded-lg p-4 shadow-sm">
+                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                  <span className="text-gray-700 font-medium">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Valor total */}
+            <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-xl p-6 text-center">
+              <p className="text-black text-lg mb-2">
+                <span className="font-bold">VALOR TOTAL:</span> <span className="line-through">R$ 497,00</span>
+              </p>
+              <p className="text-black text-3xl font-bold">
+                HOJE POR APENAS: <span className="text-red-600">R$ 97,00</span>
+              </p>
+              <p className="text-black text-sm mt-2">
+                ⏰ Oferta válida apenas hoje • Acesso imediato
+              </p>
+            </div>
+          </div>
+
+          {/* Garantia */}
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center bg-green-100 border border-green-300 rounded-full px-6 py-3">
+              <Award className="w-6 h-6 text-green-600 mr-3" />
+              <span className="text-green-700 font-semibold">
+                🛡️ GARANTIA TOTAL DE 7 DIAS OU SEU DINHEIRO DE VOLTA
+              </span>
             </div>
           </div>
         </div>

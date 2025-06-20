@@ -1,14 +1,15 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { CheckCircle, Clock, Shield } from 'lucide-react';
 
 const PricingSection = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="bg-gray-900 py-16 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 relative overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
           backgroundSize: '20px 20px'
@@ -16,75 +17,117 @@ const PricingSection = () => {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-4xl font-bold text-white mb-4 animate-fade-in">
-          Investimento no Seu Sucesso
+        
+        {/* Urgência */}
+        <div className="bg-red-500 text-white py-3 px-6 rounded-full inline-block mb-8 animate-pulse">
+          <span className="font-bold">⚠️ ATENÇÃO: Oferta encerra em breve!</span>
+        </div>
+
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
+          🚀 Garante Sua Vaga Agora
         </h2>
         <p className="text-xl text-gray-300 mb-12 animate-fade-in delay-200">
-          Sua vida profissional vai mudar hoje
+          Invista no seu futuro e mude de vida hoje mesmo
         </p>
 
-        <div className="max-w-md mx-auto">
+        <div className="max-w-lg mx-auto">
           <div 
-            className={`bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 ${
-              isHovered ? 'scale-105 shadow-red-500/20' : 'scale-100'
+            className={`bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 border-4 border-yellow-400 ${
+              isHovered ? 'scale-105 shadow-yellow-400/20' : 'scale-100'
             }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-4 relative">
-              <span className="font-bold text-lg">ESTA SEMANA APENAS</span>
-              <div className="absolute top-0 right-0 bg-red-600 text-white px-4 py-2 rounded-bl-2xl text-sm font-bold animate-pulse">
-                67% OFF
+            
+            {/* Header do card */}
+            <div className="bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-6 relative">
+              <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-2 rounded-bl-2xl text-sm font-bold animate-pulse">
+                🔥 80% OFF
               </div>
+              <h3 className="font-bold text-2xl">ROTINA INTELIGENTE</h3>
+              <p className="text-green-100">Sistema Completo de Aprovação</p>
             </div>
             
             <div className="p-8">
-              <div className="text-7xl font-bold text-red-500 mb-4 animate-pulse">
-                R$ 39,90
-              </div>
-              <div className="text-gray-500 line-through text-2xl mb-6">
-                De R$ 120,00
+              
+              {/* Preço */}
+              <div className="mb-8">
+                <div className="text-gray-500 line-through text-xl mb-2">
+                  De R$ 497,00
+                </div>
+                <div className="text-6xl font-bold text-green-500 mb-2">
+                  R$ 97
+                </div>
+                <div className="text-gray-600">
+                  <span className="text-sm">ou 12x de </span>
+                  <span className="font-bold text-lg">R$ 9,70</span>
+                </div>
               </div>
 
-              <div className="bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-6 rounded-xl mb-6 transform hover:scale-105 transition-all duration-300">
-                <div className="font-bold text-lg">ACESSO IMEDIATO + GARANTIA</div>
-                <div className="text-sm opacity-90">Resultados em 7 dias ou seu dinheiro de volta</div>
+              {/* Benefícios */}
+              <div className="space-y-3 mb-8 text-left">
+                {[
+                  "✅ Acesso imediato e vitalício",
+                  "✅ Cronograma personalizado", 
+                  "✅ Técnicas de memorização",
+                  "✅ Sistema de revisões",
+                  "✅ Grupo VIP no Telegram",
+                  "✅ Suporte direto comigo",
+                  "✅ Garantia de 7 dias"
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center">
+                    <span className="text-gray-700">{item}</span>
+                  </div>
+                ))}
               </div>
 
+              {/* CTA */}
               <Button 
                 size="lg" 
-                className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white py-6 text-xl font-bold rounded-xl mb-6 transform hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-glow"
+                className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 text-xl font-bold rounded-xl mb-6 transform hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-glow"
               >
-                COMPRAR AGORA - ACESSO IMEDIATO
+                🚀 GARANTIR MINHA APROVAÇÃO AGORA!
               </Button>
 
-              <div className="text-sm text-gray-500 space-y-2">
-                <p className="flex items-center justify-center">
-                  <span className="mr-2">⚡</span>
-                  Entrega: 100% Digital - Acesso em até 5 min
+              {/* Urgência */}
+              <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-4 mb-6">
+                <p className="text-yellow-800 font-bold text-sm">
+                  ⏰ ÚLTIMAS VAGAS DISPONÍVEIS
                 </p>
-                <p className="flex items-center justify-center">
-                  <span className="mr-2">🔒</span>
-                  Compra Segura - Site Protegido
+                <p className="text-yellow-700 text-xs">
+                  Esta oferta especial termina em breve
                 </p>
+              </div>
+
+              {/* Segurança */}
+              <div className="space-y-2 text-sm text-gray-500">
+                <div className="flex items-center justify-center">
+                  <Shield className="w-4 h-4 mr-2" />
+                  <span>Pagamento 100% Seguro</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <Clock className="w-4 h-4 mr-2" />
+                  <span>Acesso liberado em até 5 minutos</span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 mr-2" />
+                  <span>Garantia incondicional de 7 dias</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Trust indicators */}
-        <div className="mt-12 flex justify-center items-center space-x-8 opacity-70">
-          <div className="text-white text-sm">
-            <div className="font-bold">256-bit SSL</div>
-            <div>Segurança</div>
-          </div>
-          <div className="text-white text-sm">
-            <div className="font-bold">Pagamento</div>
-            <div>Seguro</div>
-          </div>
-          <div className="text-white text-sm">
-            <div className="font-bold">Suporte</div>
-            <div>24/7</div>
+        {/* Testemunho de urgência */}
+        <div className="mt-12 max-w-2xl mx-auto">
+          <div className="bg-blue-900/50 backdrop-blur-lg rounded-xl p-6 border border-blue-500/30">
+            <p className="text-white text-lg italic mb-4">
+              "Não espere mais! Cada dia que você adia é uma oportunidade perdida. 
+              Comece hoje e em 12 meses você estará aprovado!"
+            </p>
+            <p className="text-blue-300 font-semibold">
+              - Johnny Sábia, Aprovado TRT-19
+            </p>
           </div>
         </div>
       </div>
