@@ -1,28 +1,27 @@
-
 import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Como funciona o método TNT-19? Não é mais uma 'receita de bolo'?",
-      answer: "Não! O TNT-19 é um método científico baseado em técnicas comprovadas de memorização e organização. Não é teoria, são estratégias práticas que realmente funcionam."
+      question: "❓ Sou iniciante total em concursos. Este método funciona para mim?",
+      answer: '<b>SIM!</b> O método foi desenvolvido especialmente pensando em quem está começando. Todas as técnicas são explicadas de forma simples e prática, sem "juridiquês" ou complicações.'
     },
     {
-      question: "Vou conseguir aplicar mesmo sendo iniciante?",
-      answer: "Sim! O método foi desenvolvido especificamente para iniciantes. Você recebe um passo a passo detalhado e simples de seguir."
+      question: "🤖 Tenho pouco tempo para estudar. Ainda assim funciona?",
+      answer: '<b>PERFEITAMENTE!</b> Uma das principais vantagens do método é otimizar seu tempo de estudo. Você vai aprender a estudar de forma mais eficiente, absorvendo mais conteúdo em menos tempo.'
     },
     {
-      question: "É preciso estudar muitas horas por dia?",
-      answer: "Não! Uma das vantagens do método é otimizar seu tempo de estudo. Você vai estudar com mais qualidade, não necessariamente mais horas."
+      question: "💰 O que acontece se eu não gostar do conteúdo?",
+      answer: '<b>7 dias de garantia total</b>. Se por qualquer motivo não ficar satisfeito, basta enviar um email e devolvemos 100% do seu dinheiro, sem perguntas.'
     },
     {
-      question: "Funciona para qualquer concurso?",
-      answer: "Sim! O método TNT-19 é aplicável a qualquer área e nível de concurso público. As técnicas são universais."
+      question: "📅 Como vou receber o material?",
+      answer: 'O acesso é <b>100% online e imediato</b>. Após a compra, você recebe um email com o link para download. Funciona em celular, tablet e computador.'
     },
     {
-      question: "E se eu não conseguir colocar em prática?",
-      answer: "Você tem 7 dias de garantia total. Se não conseguir aplicar ou não ver resultados, devolvemos 100% do seu dinheiro."
+      question: "🏆 Este método funciona para qualquer tipo de concurso?",
+      answer: '<b>SIM!</b> As técnicas são universais e funcionam para qualquer concurso: federal, estadual, municipal, tribunais, polícias, etc. Os princípios de estudo eficiente são os mesmos.'
     }
   ];
 
@@ -33,19 +32,19 @@ const FAQSection = () => {
           Perguntas Frequentes
         </h2>
 
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+        <div className="max-w-4xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-6">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-white rounded-lg shadow-sm border border-gray-200"
+                className="bg-red-500 rounded-xl shadow-lg border-none"
               >
-                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-800 hover:no-underline">
+                <AccordionTrigger className="px-8 py-6 text-left font-bold text-white hover:no-underline text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-4 text-gray-600">
-                  {faq.answer}
+                <AccordionContent className="px-8 pb-6 text-gray-800 bg-white rounded-b-xl">
+                  <span dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </AccordionContent>
               </AccordionItem>
             ))}

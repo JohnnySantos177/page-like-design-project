@@ -1,16 +1,15 @@
-
 import React from 'react';
 
 const StatsSection = () => {
   const stats = [
     {
       number: "Aprovado",
-      label: "no Tribunal Regional do Trabalho da Paraíba (TRT-19)",
+      label: "no Tribunal Regional do Trabalho de Alagoas (TRT-19)",
       icon: "🏆"
     },
     {
       number: "Especialista",
-      label: "em Direito e estratégias de estudos para concursos",
+      label: "em Gestão e estratégias de estudos para concursos",
       icon: "📈"
     },
     {
@@ -25,10 +24,10 @@ const StatsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Método Criado por <span className="text-yellow-400">Johnny Santos</span>
+            Ebook Criado por <span className="text-yellow-400">Johnny Santos</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Profissional aprovado em concursos públicos que desenvolveu um sistema 
+            Profissional aprovado em concursos públicos que desenvolveu um ebook 
             eficiente de estudos baseado em sua experiência real
           </p>
         </div>
@@ -53,7 +52,7 @@ const StatsSection = () => {
               ✅ CREDIBILIDADE
             </p>
             <p className="text-white text-lg">
-              Método desenvolvido por quem realmente passou e sabe o que funciona.
+              Método aplicado por quem realmente passou e sabe o que funciona.
               <br />
               <span className="text-yellow-400 font-semibold">Experiência prática, não apenas teoria!</span>
             </p>

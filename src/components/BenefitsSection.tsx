@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircle, Brain, Target, Clock, TrendingUp, Award, Users, BookOpen, Zap, Star } from 'lucide-react';
 
@@ -43,14 +42,18 @@ const BenefitsSection = () => {
           {/* Título principal */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              📚 <span className="text-blue-600">ROTINA INTELIGENTE</span>
-              <br />
-              O Sistema Completo Para Sua Aprovação
+              🎯 ROTA INTELIGENTE: A Jornada para a Aprovação
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Tudo que você precisa para estudar de forma eficiente e aumentar 
-              suas chances de conquistar sua aprovação
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto font-bold mb-8">
+              O método completo que vai revolucionar seus estudos e acelerar sua aprovação!
             </p>
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/lovable-uploads/Capa E-Book.png" 
+                alt="Capa do Ebook Rota Inteligente" 
+                className="rounded-2xl shadow-xl max-w-xs w-full h-auto"
+              />
+            </div>
           </div>
 
           {/* Benefícios principais */}
@@ -74,35 +77,6 @@ const BenefitsSection = () => {
                 </div>
               );
             })}
-          </div>
-
-          {/* O que você vai receber */}
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-10 border border-green-200">
-            <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">
-              🎁 O QUE VOCÊ VAI RECEBER:
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              {bonusItems.map((item, index) => (
-                <div key={index} className="flex items-center space-x-3 bg-white rounded-lg p-4 shadow-sm">
-                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
-                  <span className="text-gray-700 font-medium">{item}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Valor total */}
-            <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-xl p-6 text-center">
-              <p className="text-black text-lg mb-2">
-                <span className="font-bold">VALOR TOTAL:</span> <span className="line-through">R$ 497,00</span>
-              </p>
-              <p className="text-black text-3xl font-bold">
-                HOJE POR APENAS: <span className="text-red-600">R$ 97,00</span>
-              </p>
-              <p className="text-black text-sm mt-2">
-                ⏰ Oferta por tempo limitado • Acesso imediato
-              </p>
-            </div>
           </div>
 
           {/* Garantia */}

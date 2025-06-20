@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Check } from 'lucide-react';
 
@@ -14,7 +13,7 @@ const TestimonialSection = () => {
           <div className="text-center mb-8">
             <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 overflow-hidden border-4 border-red-500">
               <img 
-                src="/lovable-uploads/12847874-bc25-44e9-af20-58bcbe49cbf3.png" 
+                src="/lovable-uploads/eu TRT.jpg" 
                 alt="Johnny Santos" 
                 className="w-full h-full object-cover"
               />

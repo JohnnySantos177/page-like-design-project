@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, Clock, Shield } from 'lucide-react';
@@ -44,23 +43,40 @@ const PricingSection = () => {
               <div className="absolute top-0 right-0 bg-red-500 text-white px-4 py-2 rounded-bl-2xl text-sm font-bold animate-pulse">
                 🔥 80% OFF
               </div>
-              <h3 className="font-bold text-2xl">ROTINA INTELIGENTE</h3>
-              <p className="text-green-100">Sistema Completo de Estudos</p>
+              <h3 className="font-bold text-2xl">ROTA INTELIGENTE</h3>
+              <p className="text-green-100">Ebook</p>
             </div>
             
             <div className="p-8">
-              
-              {/* Preço */}
+              {/* Preço e Oferta - NOVO BLOCO */}
               <div className="mb-8">
-                <div className="text-gray-500 line-through text-xl mb-2">
-                  De R$ 497,00
+                <div className="text-gray-400 line-through text-2xl mb-2 font-semibold">
+                  De R$ 197,00
                 </div>
-                <div className="text-6xl font-bold text-green-500 mb-2">
-                  R$ 97
+                <div className="text-5xl font-extrabold text-red-500 mb-2">
+                  R$ 39,90
                 </div>
-                <div className="text-gray-600">
-                  <span className="text-sm">ou 12x de </span>
-                  <span className="font-bold text-lg">R$ 9,70</span>
+                <div className="text-green-600 text-lg font-semibold mb-4">
+                  ou 5x de R$ 8,83 sem juros
+                </div>
+                <div className="bg-green-500 text-white rounded-lg py-3 px-4 mb-4 flex flex-col items-center">
+                  <span className="font-bold text-base">🎁 OFERTA ESPECIAL: 80% DE DESCONTO</span>
+                  <span className="text-sm">Menos que um lanche no shopping!</span>
+                </div>
+                <Button 
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-red-500 to-orange-400 hover:from-red-600 hover:to-orange-500 text-white py-6 text-xl font-bold rounded-full mb-6 transform hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-glow"
+                >
+                  <span role="img" aria-label="cartao">💳</span> COMPRAR AGORA - ACESSO IMEDIATO
+                </Button>
+                <div className="flex flex-col items-center mt-4 space-y-1">
+                  <div className="flex items-center space-x-2 text-gray-700 text-sm">
+                    <span role="img" aria-label="cadeado">🔒</span> <span>Pagamento 100% Seguro</span>
+                    <span className="mx-1">|</span>
+                    <span role="img" aria-label="relampago">🔵</span> <span>Acesso Imediato</span>
+                    <span className="mx-1">|</span>
+                    <span role="img" aria-label="dispositivo">📱</span> <span>Funciona em qualquer dispositivo</span>
+                  </div>
                 </div>
               </div>
 
@@ -68,10 +84,8 @@ const PricingSection = () => {
               <div className="space-y-3 mb-8 text-left">
                 {[
                   "✅ Acesso imediato e vitalício",
-                  "✅ Cronograma estruturado", 
                   "✅ Técnicas de memorização",
                   "✅ Sistema de revisões",
-                  "✅ Materiais de apoio",
                   "✅ Suporte disponível",
                   "✅ Garantia de 7 dias"
                 ].map((item, index) => (
@@ -80,14 +94,6 @@ const PricingSection = () => {
                   </div>
                 ))}
               </div>
-
-              {/* CTA */}
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 text-xl font-bold rounded-xl mb-6 transform hover:scale-105 transition-all duration-300 shadow-xl animate-pulse-glow"
-              >
-                🚀 GARANTIR MINHA VAGA AGORA!
-              </Button>
 
               {/* Urgência */}
               <div className="bg-yellow-100 border border-yellow-300 rounded-lg p-4 mb-6">

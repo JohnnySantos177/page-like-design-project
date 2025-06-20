@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Play, CheckCircle } from 'lucide-react';
@@ -30,16 +29,16 @@ const HeroSection = () => {
             🔥 MÉTODO COMPROVADO • RESULTADOS REAIS
           </div>
 
-          <h1 className="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in">
-            <span className="text-yellow-400">ROTINA INTELIGENTE</span>
+          <h1 className="text-3xl md:text-6xl font-extrabold text-white mb-6 leading-tight animate-fade-in max-w-6xl mx-auto">
+            <span className="text-yellow-400">PARE</span> de Estudar sem Rumo!
             <br />
-            O Método que Vai Te Ajudar a
+            Descubra o Método que <span className="text-yellow-400 animate-pulse">VIRA O</span>
             <br />
-            <span className="text-green-400 animate-pulse">PASSAR EM CONCURSOS PÚBLICOS</span>
+            <span className="text-yellow-400 animate-pulse">JOGO</span> e Aprova em <span className="text-yellow-400 animate-pulse">QUALQUER</span> Concurso
           </h1>
 
           <h2 className="text-xl md:text-2xl text-blue-200 mb-8 font-medium animate-fade-in delay-200">
-            Descubra o sistema completo desenvolvido por Johnny Santos
+            Descubra o ebook desenvolvido por Johnny Santos
             <br />
             para otimizar seus estudos e aumentar suas chances de aprovação
           </h2>
@@ -117,7 +116,7 @@ const HeroSection = () => {
                 <div className="text-sm">Aprovado</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-400">Direito</div>
+                <div className="text-3xl font-bold text-green-400">Gestão</div>
                 <div className="text-sm">Especialista</div>
               </div>
               <div className="text-center">
