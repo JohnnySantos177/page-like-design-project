@@ -44,24 +44,18 @@ const HeroSection = () => {
           </h2>
 
           {/* Video placeholder */}
-          <div className="relative max-w-4xl mx-auto mb-12 animate-fade-in delay-500">
-            <div className="bg-black/50 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
-              <div className="aspect-video bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/30"></div>
-                <Button 
-                  size="lg" 
-                  className="bg-red-500 hover:bg-red-600 text-white px-8 py-6 text-xl font-bold rounded-full transform hover:scale-110 transition-all duration-300 shadow-2xl z-10"
-                >
-                  <Play className="w-8 h-8 mr-3" />
-                  ASSISTIR VÍDEO GRATUITO
-                </Button>
-                <div className="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded text-sm">
-                  📹 Vídeo exclusivo • 47 min
-                </div>
-              </div>
-              <p className="text-white text-center mt-4 text-lg">
-                👆 Assista agora e descubra como estudar de forma inteligente
-              </p>
+          <div className="max-w-3xl mx-auto mb-12 animate-fade-in delay-500">
+            <div className="bg-[#3a2323] bg-opacity-90 border-2 border-red-400 rounded-2xl p-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-red-500 mb-6 flex items-center justify-center gap-2">
+                <span role='img' aria-label='surpreso'>😱</span> Você está cansado de...
+              </h3>
+              <ul className="text-left text-white text-lg space-y-3 list-disc list-inside">
+                <li><span role='img' aria-label='livro'>📚</span> Estudar horas e horas todos os dias... e ainda sentir que não sai do lugar?</li>
+                <li><span role='img' aria-label='confuso'>🥴</span> Se perder no meio de tanto conteúdo e não saber nem por onde começar?</li>
+                <li><span role='img' aria-label='triste'>😔</span> Ver colegas sendo aprovados enquanto você coleciona frustrações?</li>
+                <li><span role='img' aria-label='dinheiro'>💸</span> Gastar dinheiro em cursinhos e métodos que prometem muito, mas entregam pouco?</li>
+                <li><span role='img' aria-label='sono'>😴</span> Estudar com afinco e... travar na hora da prova, como se tivesse esquecido tudo?</li>
+              </ul>
             </div>
           </div>
 
