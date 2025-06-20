@@ -26,23 +26,27 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-gradient-to-r from-red-500 to-orange-400 py-2">
-      <div className="container mx-auto px-4">
+    <header className="bg-gradient-to-r from-red-500 via-red-600 to-orange-500 py-3 relative overflow-hidden">
+      {/* Background animation */}
+      <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-400 animate-pulse opacity-75"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex justify-center items-center text-white text-sm font-medium">
-          <span className="mr-4">🔥 PROMOÇÃO: Última oportunidade! Restam apenas</span>
-          <div className="flex space-x-2">
-            <div className="bg-white text-red-500 px-2 py-1 rounded font-bold min-w-[40px] text-center">
+          <span className="mr-4 animate-bounce">🔥 PROMOÇÃO: Última oportunidade! Restam apenas</span>
+          <div className="flex space-x-2 items-center">
+            <div className="bg-white text-red-500 px-3 py-2 rounded-lg font-bold min-w-[50px] text-center shadow-lg transform transition-all duration-300 hover:scale-110 animate-pulse-glow">
               {String(timeLeft.hours).padStart(2, '0')}
             </div>
-            <span>:</span>
-            <div className="bg-white text-red-500 px-2 py-1 rounded font-bold min-w-[40px] text-center">
+            <span className="text-2xl font-bold animate-pulse">:</span>
+            <div className="bg-white text-red-500 px-3 py-2 rounded-lg font-bold min-w-[50px] text-center shadow-lg transform transition-all duration-300 hover:scale-110 animate-pulse-glow">
               {String(timeLeft.minutes).padStart(2, '0')}
             </div>
-            <span>:</span>
-            <div className="bg-white text-red-500 px-2 py-1 rounded font-bold min-w-[40px] text-center">
+            <span className="text-2xl font-bold animate-pulse">:</span>
+            <div className="bg-white text-red-500 px-3 py-2 rounded-lg font-bold min-w-[50px] text-center shadow-lg transform transition-all duration-300 hover:scale-110 animate-pulse-glow">
               {String(timeLeft.seconds).padStart(2, '0')}
             </div>
           </div>
+          <span className="ml-4 text-xs opacity-90">para esta oferta!</span>
         </div>
       </div>
     </header>
